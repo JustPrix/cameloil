@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "main": "dist/index.js",
   "private": true,
-  "homepage": "https://demos.creative-tim.com/now-ui-dashboard-react/#/",
+  "homepage": "cameloil",
   "dependencies": {
     "axios": "^0.21.0",
     "bootstrap": "4.5.0",
