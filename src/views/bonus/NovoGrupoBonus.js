@@ -70,7 +70,7 @@ export default function NovoGrupoBonus (props){
       "status": grupoBonus.status,
       "user": user.fullName,
     }
-    
+    console.log(object)
     setErrors([]);
     axios.post(baseUrl+"grupobonus/save", object).then(
       res => { 

@@ -67,8 +67,8 @@ class Login extends React.Component {
       return (
         <>
         {!this.state.isLoadind ? <div className="wrapper">
-        <div className="content">
-        <Row className="justify-content-md-center">
+        
+        <Row className="justify-content-md-center justify-content-sm-center" style={{ marginTop: 50}}>
           <Col xs={6}>
             <Card >
               <CardHeader>
@@ -115,7 +115,6 @@ class Login extends React.Component {
             </Card>
           </Col>
           </Row>
-          </div>
           
           </div> : <Spinner><span className="sr-only">Carregando</span></Spinner>}
         </>
