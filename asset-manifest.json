@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cameloil/static/css/main.11bfb114.chunk.css",
+    "main.js": "/cameloil/static/js/main.001813d7.chunk.js",
+    "main.js.map": "/cameloil/static/js/main.001813d7.chunk.js.map",
+    "runtime-main.js": "/cameloil/static/js/runtime-main.ef5d07d7.js",
+    "runtime-main.js.map": "/cameloil/static/js/runtime-main.ef5d07d7.js.map",
+    "static/css/2.6e90b12a.chunk.css": "/cameloil/static/css/2.6e90b12a.chunk.css",
+    "static/js/2.b0fbe128.chunk.js": "/cameloil/static/js/2.b0fbe128.chunk.js",
+    "static/js/2.b0fbe128.chunk.js.map": "/cameloil/static/js/2.b0fbe128.chunk.js.map",
+    "index.html": "/cameloil/index.html",
+    "precache-manifest.a065bda268a94cd4f10b255d448addd8.js": "/cameloil/precache-manifest.a065bda268a94cd4f10b255d448addd8.js",
+    "service-worker.js": "/cameloil/service-worker.js",
+    "static/css/2.6e90b12a.chunk.css.map": "/cameloil/static/css/2.6e90b12a.chunk.css.map",
+    "static/css/main.11bfb114.chunk.css.map": "/cameloil/static/css/main.11bfb114.chunk.css.map",
+    "static/js/2.b0fbe128.chunk.js.LICENSE.txt": "/cameloil/static/js/2.b0fbe128.chunk.js.LICENSE.txt",
+    "static/js/main.001813d7.chunk.js.LICENSE.txt": "/cameloil/static/js/main.001813d7.chunk.js.LICENSE.txt",
+    "static/media/now-ui-dashboard.scss?v1.4.0": "/cameloil/static/media/nucleo-outline.8ebec31f.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef5d07d7.js",
+    "static/css/2.6e90b12a.chunk.css",
+    "static/js/2.b0fbe128.chunk.js",
+    "static/css/main.11bfb114.chunk.css",
+    "static/js/main.001813d7.chunk.js"
+  ]
+}
