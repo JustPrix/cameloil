@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "main": "dist/index.js",
   "private": true,
-  "homepage": "https://demos.creative-tim.com/now-ui-dashboard-react/#/",
+  "homepage": "/cameloil/",
   "dependencies": {
     "axios": "^0.21.0",
     "bootstrap": "4.5.0",
@@ -37,7 +37,9 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.css",
     "minify-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.css --source-map true"
+    "map-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.css --source-map true",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "optionalDependencies": {
     "@types/googlemaps": "3.39.6",
