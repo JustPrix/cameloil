@@ -1,11 +1,11 @@
 /*eslint-disable*/
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { Nav } from "reactstrap";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Nav } from 'reactstrap';
 // javascript plugin used to create scrollbars on windows
-import PerfectScrollbar from "perfect-scrollbar";
+import PerfectScrollbar from 'perfect-scrollbar';
 
-import logo from "logo1.jpeg";
+import logo from 'logo1.jpeg';
 
 var ps;
 
@@ -16,10 +16,10 @@ class Sidebar extends React.Component {
   }
   // verifies if routeName is the one active (in browser input)
   activeRoute(routeName) {
-    return this.props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
+    return this.props.location.pathname.indexOf(routeName) > -1 ? 'active' : '';
   }
   componentDidMount() {
-    if (navigator.platform.indexOf("Win") > -1) {
+    if (navigator.platform.indexOf('Win') > -1) {
       ps = new PerfectScrollbar(this.refs.sidebar, {
         suppressScrollX: true,
         suppressScrollY: false,
@@ -27,30 +27,24 @@ class Sidebar extends React.Component {
     }
   }
   componentWillUnmount() {
-    if (navigator.platform.indexOf("Win") > -1) {
+    if (navigator.platform.indexOf('Win') > -1) {
       ps.destroy();
     }
   }
   render() {
     return (
-      <div className="sidebar" data-color={this.props.backgroundColor}>
-        <div className="logo">
-          <a
-            href="#"
-            className="simple-text logo-mini"
-          >
-            <div className="logo-img">
-              <img src={logo} alt="react-logo" />
+      <div className='sidebar' data-color={this.props.backgroundColor}>
+        <div className='logo'>
+          <a href='#' className='simple-text logo-mini'>
+            <div className='logo-img'>
+              <img src={process.env.PUBLIC_URL + '/logo.png'} alt='logo' />
             </div>
           </a>
-          <a
-            href="#"
-            className="simple-text logo-normal"
-          >
+          <a href='#' className='simple-text logo-normal'>
             Camel Oil
           </a>
         </div>
-        <div className="sidebar-wrapper" ref="sidebar">
+        <div className='sidebar-wrapper' ref='sidebar'>
           <Nav>
             {this.props.routes.map((prop, key) => {
               if (prop.redirect) return null;
@@ -58,16 +52,16 @@ class Sidebar extends React.Component {
                 <li
                   className={
                     this.activeRoute(prop.layout + prop.path) +
-                    (prop.pro ? " active active-pro" : "")
+                    (prop.pro ? ' active active-pro' : '')
                   }
                   key={key}
                 >
                   <NavLink
                     to={prop.layout + prop.path}
-                    className="nav-link"
-                    activeClassName="active"
+                    className='nav-link'
+                    activeClassName='active'
                   >
-                    <i className={"now-ui-icons " + prop.icon} />
+                    <i className={'now-ui-icons ' + prop.icon} />
                     <p>{prop.name}</p>
                   </NavLink>
                 </li>
